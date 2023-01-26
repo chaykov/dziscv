@@ -52,11 +52,6 @@ p{
   background-repeat: no-repeat;
 }
 
-.mainBackground{
-  width: 100%;
-
-}
-
 
 .container {
   padding: 10px 10%;
@@ -357,6 +352,10 @@ nav ul li a:hover::after {
 /* media query - for tablet/mobile */
 
 @media only screen and (max-width: 1000px) {
+
+  .mainBackground{
+    width: 100%;
+  }
 
   .container{
     overflow-x: hidden;
