@@ -1,0 +1,489 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  /* font-family: "Libre Baskerville", serif; */
+  scroll-behavior: smooth;
+}
+
+html{
+  display: flex;
+  flex-direction: column;
+  font-size:100%;
+}
+
+body {
+  background: #022e57;
+  color: #fff;
+  /* overflow-x: hidden; */
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  font-size: 20px;
+}
+
+.linkToSite,
+.linkToSite:visited{
+  font-weight: bold;
+  color: #ff96ad;
+}
+
+.linkToSite:hover{
+  color: #022e57;
+}
+
+/*--------------- strona główna ---------------*/
+#header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.image{
+  width: 100%;
+  height: 100vh;
+  background: url(img/bg.png) center center fixed;
+  background-repeat: no-repeat;
+}
+
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff96ad;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.border-line{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  background: #ff96ad;
+  height: 5px;
+
+}
+
+/*--------------- nav mixed with background ---------------*/
+
+.bg-center {
+  background-position: center;
+}
+
+/*--------------- kim jesteśmy? ---------------*/
+#about {
+  padding: 80px 0;
+  color: #022e57;
+  background: #fff;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-1 img {
+  width: 100%;
+}
+
+.about-col-2 {
+  flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.sub-title {
+  font-size: 60px;
+  font-weight: 600;
+}
+
+/*--------------- co robimy? ---------------*/
+#services {
+  padding: 90px 0;
+  background: #ff96ad;
+  color: #022e57;
+}
+
+.row.reversed {
+  flex-direction: row-reverse; 
+}
+
+.about-col-1 img{
+  clip-path: circle();
+}
+
+
+
+/*--------------- dlaczego? ---------------*/
+#reason {
+  padding: 60px 0;
+  background: #fff;
+  color: #022e57;
+}
+
+/*--------------- wywiad ---------------*/
+#interview{
+  padding: 40px 0;
+  background: #022e57;
+  color: #fff;
+}
+
+/*--------------- harmonogram ---------------*/
+#harmonogram{
+  padding: 40px 0;
+  background: #ff96ad;
+  color: #022e57;
+}
+
+
+/*--------------- partnerzy ---------------*/
+#partners {
+  background: #fff;
+  color: #022e57;
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtext-partner {
+  text-align: center;
+  padding-bottom: 60px;
+  font-size: 42px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.item {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item img {
+  max-width: 80%;
+}
+
+/*--------------- kontakt ---------------*/
+#footer {
+  padding: 50px 0;
+  background: #fff;
+  color: #022e57;
+}
+
+.flex-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-logo {
+  height: 64px;
+}
+
+.margin-hr {
+  margin: 60px 0;
+}
+
+/* ----------------------------- */
+#footer{
+  background: #fff;
+}
+
+.flex-socials{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 100p;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 100px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Linkedin */
+.fa-linkedin {
+  background: #55acee;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: #ff96ad;
+  color: white;
+}
+
+/* TikTok */
+.fa-tiktok{
+  background-color: #000;
+  color: #fff;
+  width: 100px;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* hamburger for menu in navbar */
+
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #333; */
+  color: white;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  
+}
+
+.navbar-links li:hover {
+  background-color: #ff96ad;
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* media query - for tablet/mobile */
+
+@media only screen and (max-width: 1000px) {
+
+  .image{
+    /* margin: 0 auto; */
+    /* width: 100%; */
+    background-size: contain;
+  }
+
+  .subtext-partner,
+  .sub-title
+  {
+    font-size: 3rem;
+    margin-top: 10px;
+  }
+
+  p{
+    font-size: 1.285rem;
+    font-weight: lighter;
+  }
+
+
+  .navbar {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .navbar-links{
+    justify-content: center;
+    align-items: center;
+    background-color:#fff;
+  }
+
+  .image:active{
+    display: none;
+  }
+
+  .toggle-button {
+    display: flex;
+    
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+    margin: 25px 25px;
+    /* background-color: #ff96ad; */
+    text-align: center;
+    
+  }
+
+  .navbar-links ul{
+    display: flex;
+    list-style: none;
+  }
+
+  .navbar-links ul {
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .navbar-links ul li {
+      text-align: center;
+  }
+
+  .navbar-links ul li a {
+      padding: .5rem 1rem;
+      color: #000;
+      /* font-weight: bold; */
+      font-size: 1.125rem;
+  }
+
+  .navbar-links.active {
+      display: flex;
+  }
+
+  .row,
+  .row.reversed{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-col-1,
+  .about-col-2{
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  .row img{
+    width: 50%;
+  }
+
+  .grid-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .flex-footer{
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .email{
+    margin: 20px;
+    text-align: center;
+  }
+
+  .flex-footer img{
+    margin-bottom: 35px;
+    width: auto;
+  }
+
+  .flex-socials{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 0 20px;
+  }
+  
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .nav-item a{
+    font-size: 0.6rem;
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .nav-item a{
+    font-size: 0.80rem;
+  }
+
+}
