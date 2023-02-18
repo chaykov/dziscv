@@ -251,6 +251,18 @@ table, th, td{
   border-bottom: 1px solid #ff96ad;
 }
 
+/* .harmonogram-second table, 
+.harmonogram-second th,
+.harmonogram-second td{
+  background-color: #022e57;
+  color: #fff;
+} */
+
+.table-color{
+  border: 2px solid #ddd;
+  outline: 0;
+}
+
 .harmonogram-third{
   background: #022e57;
   color: #fff;
@@ -569,6 +581,21 @@ table, th, td{
   }
   
 }
+
+@media only screen and (max-width: 365px) {
+
+  .info-right-schedule table,th,td{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .flex-table{
+    font-size: 1em;
+  }
+
+}
+
 
 @media only screen and (max-width: 1000px) {
 
