@@ -170,6 +170,11 @@ nav ul li a:hover::after {
   align-items: center;
 }
 
+.info-left,
+.info-right{
+  flex: 1;
+}
+
 .info-left{
   display: flex;
   flex-direction: column;
@@ -231,8 +236,8 @@ table, th, td{
   color: #fff;
 }
 
-.padding{
-  padding: 40px 10%;
+#harmonogram .padding{
+  padding: 40px 0;
 }
 
 .harmonogram-second{
