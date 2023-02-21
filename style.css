@@ -153,6 +153,63 @@ nav ul li a:hover::after {
   color: #fff;
 }
 
+#interview .sub-title{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#interview .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+}
+
+.left-interview{
+  background: #fff;
+  border: 10px solid #fff;
+  display: flex;
+}
+
+.left-interview img{
+  height: 400px;
+  color: transparent;
+}
+
+.center-interview{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text-interview{
+  font-weight: lighter;
+  max-width: 500px;
+}
+
+.download-file{
+  padding: 10px 20px;
+  background: #fff;
+  color: #022e57;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 200ms ease;
+}
+
+.text-interview a{
+  color: #ff96ad;
+  font-weight: 400;
+}
+
+.download-file:hover{
+  color: #022e57;
+  background-color: #ff96ad;
+}
+
+
 /*--------------- harmonogram ---------------*/
 #harmonogram{
   background: #ff96ad;
@@ -168,11 +225,7 @@ nav ul li a:hover::after {
   display: flex;
   justify-content: space-around;
   align-items: center;
-}
-
-.info-left,
-.info-right{
-  flex: 1;
+  margin: 0 auto;
 }
 
 .info-left{
@@ -584,7 +637,15 @@ table, th, td{
     font-size: 42px;
     font-weight: bold;
   }
+
+  #interview .container{
+    flex-direction: column;
+    gap: 30px;
+  }
   
+  #interview .sub-title{
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 365px) {
@@ -605,7 +666,7 @@ table, th, td{
 @media only screen and (max-width: 1000px) {
 
   .nav-item a{
-    font-size: 0.6rem;
+    font-size: 0.60rem;
   }
 
 }
@@ -614,6 +675,8 @@ table, th, td{
 
   .nav-item a{
     font-size: 0.80rem;
+    font-weight: bold;
+    padding: auto 5px;
   }
 
 }
@@ -621,7 +684,11 @@ table, th, td{
 
 /* remove soon */
 .soon{
-  font-size: 42px;
+  font-size: 40px;
   text-align: center;
   font-weight: 500;
+}
+
+.download-file{
+  text-align: center;
 }
