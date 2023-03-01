@@ -224,7 +224,7 @@ nav ul li a:hover::after {
 
 /*--------------- harmonogram ---------------*/
 #harmonogram{
-  background: #ff96ad;
+  /* background: #ff96ad; */
   color: #022e57;
 }
 
@@ -239,6 +239,10 @@ nav ul li a:hover::after {
   align-items: center;
   margin: 0 auto;
   position: relative;
+}
+
+.reversed{
+  flex-direction: row-reverse;
 }
 
 .margin-top{
@@ -701,4 +705,38 @@ table, th, td{
 
 .download-file{
   text-align: center;
+}
+
+.border-lines{
+  border-top: 1px solid #ddd;
+  padding: 70px 0 0 0;
+}
+
+.border-lines-two{
+  border-top: 1px solid #333;
+  padding: 70px 0 0 0;
+}
+
+.change-bg{
+  background-color: #022e57;
+  color: #fff;
+}
+
+.change-bg span{
+  color: #ddd;
+  opacity: 0.5;
+}
+
+.change-bg table{
+  color: #333;
+}
+.change-bg .download-file{
+  font-weight: bold;
+}
+
+.change-bg .download-file:hover{
+  background-color: #ff96ad;
+  color: #333;
+  border: none;
+  outline-offset: none;
 }
