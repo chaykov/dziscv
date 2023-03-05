@@ -221,6 +221,53 @@ nav ul li a:hover::after {
   color: #fff;
 }
 
+/*--------------- ebook ---------------*/
+#ebook{
+  padding: 40px 0;
+  text-align: center;
+}
+
+#ebook .flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px 0 40px 0;
+  gap: 30px;
+}
+
+#ebook .left-interview img{
+  border: 5px solid transparent;
+  -webkit-box-shadow: 8px 8px 15px 0px rgba(224, 224, 224, 1);
+  -moz-box-shadow: 8px 8px 15px 0px rgba(224, 224, 224, 1);
+  box-shadow: 8px 8px 15px 0px rgba(224, 224, 224, 1);
+}
+
+#ebook .center-interview{
+  width: 50%;
+}
+
+#ebook h1{
+  margin-bottom: 2rem;
+  color: #022e57;
+}
+
+#ebook p{
+  font-size: 20px;
+  display: block;
+  color: #022e57;
+}
+
+#ebook .download-file{
+  background-color: #022e57;
+  color: #fff;
+  font-weight: 500;
+}
+
+#ebook .download-file:hover{
+  background-color: #ff96ad;
+  color: #022e57;
+  font-weight: 700;
+}
 
 /*--------------- harmonogram ---------------*/
 #harmonogram{
@@ -660,6 +707,27 @@ table, th, td{
   .margin-top{
     margin-top: 50px;
   }
+  
+
+  #ebook .flex{
+    flex-direction: column;
+    margin-top: -50px;
+  }
+
+  #ebook .center-interview{
+    width: 100%;
+  }
+
+  #ebook .left-interview{
+    display: flex;
+  }
+
+  #ebook .left-interview img{
+    min-width: 350px;
+    height: 350px;
+    /* background-size: cover; */
+  }
+
 }
 
 @media only screen and (max-width: 365px) {
